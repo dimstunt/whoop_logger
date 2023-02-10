@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "whoop-logger"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry Cherkashin <mr.d.fagot@gmail.com>"]
+readme = "README.md"
+packages = [{include = "whoop_logger"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
