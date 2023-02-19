@@ -15,7 +15,7 @@ if not TELEGRAM_BOT_TOKEN:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     effective_chat = update.effective_chat
     if effective_chat is None:
-        logging.warn('effective_chat is None')
+        logging.warning('effective_chat is None')
     else:
         keyboard = [[
             InlineKeyboardButton("Option 1", callback_data="option_1"),
@@ -32,7 +32,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def new_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
     effective_chat = update.effective_chat
     if effective_chat is None:
-        logging.warn("eff chat is none")
+        logging.warning("eff chat is none")
     else:
         keyboard = [[
             InlineKeyboardButton("Option 1", callback_data="option_1"),
@@ -49,7 +49,7 @@ async def new_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if query is None:
-        logging.warn("not a query")
+        logging.warning("not a query")
     else:
         await query.answer()
         data = query.data
