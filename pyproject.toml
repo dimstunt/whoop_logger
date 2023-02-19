@@ -2,7 +2,7 @@
 name = "whoop-logger"
 version = "0.1.0"
 description = ""
-authors = ["Dmitry Cherkashin <mr.d.fagot@gmail.com>"]
+authors = ["Dmitrii Cherkashin <mr.d.fagot@gmail.com>"]
 readme = "README.md"
 packages = [{include = "whoop_logger"}]
 
