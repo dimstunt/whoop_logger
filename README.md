@@ -6,13 +6,16 @@
 
 
 ### plan
-Add postgres and pgadmin via k8s
-Add model into postgres
-    event
-Add API to save an event into postgres
-Add API to delete last event in postgres
-Add API agregation about last day
-Add saving event via telegram bot
-Add web stat
-Add auth into web
-Add auth via telegram
+- [x] Add postgres and pgadmin via docker-compose
+- [ ] Add model into postgres
+  - [ ] event_type
+  - [ ] event
+- [ ] Add API to save an event into postgres
+- [ ] Add API to delete last event in postgres
+- [ ] move model and schema to fstapi
+- [ ] Add API route to agregation last day
+- [ ] Change docker-compose to k8s
+- [ ] Add saving event via telegram bot
+- [ ] Add web stat
+- [ ] Add auth into web
+- [ ] Add auth via telegram
